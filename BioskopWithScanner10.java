@@ -52,5 +52,14 @@ public class BioskopWithScanner10 {
                 break;
                     }
                 }
-               }
+             }
+               static boolean isValidSeat(int baris, int kolom, String[][] penonton){
+                    if (baris >= 1 && baris <= 4 && kolom >= 1 && kolom <=2){
+                        if (penonton[baris - 1][kolom - 1] == null){
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+
             }
